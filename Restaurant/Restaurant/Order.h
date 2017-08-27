@@ -14,18 +14,20 @@ public:
 		SERVED
 	};
 	static long idCounter;
+
 private:
 	long id;
-	const Dish** dishes;
+	Dish** dishes;
 	const Table* table;
 	eOrderStatus status;
+
 public:
-	Order(const Dish**& dishes, const Table& table, eOrderStatus status);
+	Order(const Dish** dishes, const Table& table, eOrderStatus status);
 	~Order();
 
 	// Methods
 	int calcPrice() const;
-	void cancelDish(const char*& dishName);
+	void cancelDish(const char* dishName);
 	void addDish(const Dish*& dish);
 	void print() const;
 

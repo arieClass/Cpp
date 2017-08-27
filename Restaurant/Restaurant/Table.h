@@ -8,7 +8,7 @@ public:
 
 private:
 	long id;
-	int maxNumOfGuests;
+	const int maxNumOfGuests;
 	bool isTaken;	
 
 public:

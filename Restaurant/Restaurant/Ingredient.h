@@ -10,8 +10,7 @@ private:
 	int price;
 	double caloricValue; 
 public:
-	Ingredient(char* name, int price, double caloricValue);
-	~Ingredient();
+	Ingredient(const char* name, int price, double caloricValue);
 
 	// Getters
 	const char* getName() const {return name;}

@@ -12,8 +12,8 @@ public:
 	~Menu(){delete []dishes;}
 
 	// Methods
-	void addDish(Dish dish);
-	void removeDish(char* dishName);
+	void addDish(const Dish& dish);
+	void removeDish(const char* dishName);
 	void print() const;
 };
 
